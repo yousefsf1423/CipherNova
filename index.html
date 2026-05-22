@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Y Cipher</title>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Michroma', sans-serif;
+            margin: 50px;
+            text-align: center;
+            background-image: url('https://img.magnific.com/free-vector/matrix-style-binary-code-digital-falling-numbers-blue-background_1017-37387.jpg?semt=ais_hybrid&w=740&q=80');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        input, select {
+            margin: 10px;
+            padding: 10px;
+            font-size: 1em;
+        }
+        #resultBar {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            font-weight: bold;
+            font-size: 1.5em;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Double Y Cipher Tool</h1>
+    
+    <label for="cipherText">Enter Text:</label>
+    <input type="text" id="cipherText" placeholder="Enter your text here">
+    
+    <br>
+    <label for="cipherType">Choose Cipher:</label>
+    <select id="cipherType">
+        <option value="doubleY">Double Y Cipher</option>
+    </select>
+    
+    <br>
+    <label for="action">Action:</label>
+    <select id="action">
+        <option value="encrypt">Encrypt</option>
+        <option value="decrypt">Decrypt</option>
+    </select>
+    
+    <br>
+    <div id="resultBar">Result will appear here</div>
+
+    <script src="cipher.js"></script>
+</body>
+</html>
